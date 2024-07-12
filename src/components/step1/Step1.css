@@ -1,0 +1,92 @@
+.step1 {
+  height: 90vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3b4bd;
+}
+
+.step1Container {
+  height: auto;
+  width: 90%;
+
+  margin: 0;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.672);
+}
+
+.personalInfoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.personalInfoForm > h4 {
+  width: 100%;
+  margin: 20px 0;
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.personalInfoForm > h4 > p {
+  transition: all 0.5s;
+  cursor: default;
+}
+.personalInfoForm > h4 > p:nth-child(even):hover {
+  transform: translateY(-10px);
+}
+
+.personalInfoForm > h4 > p:nth-child(odd):hover {
+  transform: translateY(10px);
+}
+.personalInfoForm > div {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+  animation: formTransition 1s ease-in-out forwards 0.5s;
+}
+
+.personalInfoForm > div > input {
+  color: #141619;
+}
+
+@keyframes formTransition {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .step1Container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .personalInfoForm > h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.multiStepForm {
+  background-color: #b3b4bd;
+  height: fit-content;
+  padding: 20px 40px;
+}
+.stepButtons {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stepButtons > button {
+  border-radius: 20px;
+
+  color: #050a44;
+  border-color: #050a44;
+  height: 30px;
+  width: 100px;
+}
+
+.stepButtons > button:hover {
+  background-color: #00203fff;
+  color: #adefd1ff;
+  border-color: #00203fff;
+}
