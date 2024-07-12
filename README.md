@@ -13,6 +13,10 @@ This is a responsive multistep form app using ReactJs and Material UI, containin
 
 
 
+## Tech Stack
+
+1. **ReactJs**
+
 
 ## Key Features
 
@@ -57,9 +61,5 @@ This project is licensed under the
 
 Feel free to customize the README file further as per your project needs. This README provides an overview of the project, installation instructions, and key features.
 
-
-## Tech Stack
-
-1. **ReactJs**
-
+```
 
