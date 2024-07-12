@@ -1,4 +1,3 @@
-// src/components/MultiStepForm.js
 import React, { useState, useEffect } from "react";
 import Step1 from "./step1/Step1.jsx";
 import Step2 from "./step2/Step2.jsx";
@@ -20,7 +19,6 @@ const MultiStepForm = () => {
   });
   const [errors, setErrors] = useState({});
 
-  // Load saved data from local storage on initial render
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem("formData"));
     if (savedData) {
@@ -28,7 +26,6 @@ const MultiStepForm = () => {
     }
   }, []);
 
-  // Save formData to local storage whenever it changes
   useEffect(() => {
     localStorage.setItem("formData", JSON.stringify(formData));
   }, [formData]);
