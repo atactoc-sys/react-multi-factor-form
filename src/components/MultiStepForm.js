@@ -3,7 +3,7 @@ import Step1 from "./step1/Step1.jsx";
 import Step2 from "./step2/Step2.jsx";
 import Step3 from "./step3/Step3.jsx";
 import { Button } from "@mui/material";
-import "./MultiStepForm.css"; // Import the CSS file
+import "./MultiStepForm.css";
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
